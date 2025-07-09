@@ -4,6 +4,6 @@
       "source": "/",
       "destination": "https://citii-bannk.vercel.app/",
       "permanent": true
-    }
-  ]
+}
+]
 }
