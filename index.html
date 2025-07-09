@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daily Book Picks</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0f4f8;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 40px 30px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .card h1 {
+      font-size: 28px;
+      color: #1a202c;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #4a5568;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background: #ebf8ff;
+      color: #2b6cb0;
+      padding: 14px 20px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    .input-group label {
+      font-size: 13px;
+      color: #2d3748;
+      margin-bottom: 6px;
+    }
+
+    .input-group input {
+      padding: 12px 14px;
+      border: 1px solid #cbd5e0;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-bottom: 15px;
+      transition: border 0.2s ease;
+    }
+
+    .input-group input:focus {
+      outline: none;
+      border-color: #3182ce;
+    }
+
+    .subscribe-btn {
+      background: #3182ce;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .subscribe-btn:hover {
+      background: #2b6cb0;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #718096;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Daily Book Picks</h1>
+    <p>Get a hand-picked book recommendation in your inbox every morning. Discover new worlds, authors, and genres.</p>
+
+    <div class="highlight">
+      📚 Curated daily book ideas for curious minds.
+    </div>
+
+    <div class="input-group">
+      <label for="email">Your email</label>
+      <input type="email" id="email" placeholder="you@example.com" />
+      <button class="subscribe-btn" onclick="subscribe()">Get My Book Pick</button>
+    </div>
+
+    <p class="footer">No spam. Unsubscribe any time.</p>
+  </div>
+
+  <script>
+    // function subscribe() {
+    //   const emailField = document.getElementById('email');
+    //   const email = emailField.value.trim();
+
+    //   if (!email) {
+    //     alert('Please enter your email address.');
+    //     return;
+    //   }
+
+    //   const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+    //   if (!emailPattern.test(email)) {
+    //     alert('Please enter a valid email address.');
+    //     return;
+    //   }
+
+    //   alert('Thanks! Your first book recommendation is on its way.');
+    //   emailField.value = '';
+    // }
+
+    // document.getElementById('email').addEventListener('keypress', function(e) {
+    //   if (e.key === 'Enter') {
+    //     subscribe();
+    //   }
+    // });
+  </script>
+</body>
+</html>
